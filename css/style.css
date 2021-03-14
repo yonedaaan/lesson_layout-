@@ -1,0 +1,86 @@
+ #container{
+    width: 300px;
+    height: 150px;
+    background-color:turquoise;
+    position: relative;
+    font-size: 0; /*inline-blockの隙間を消せる*//*だけど子のフォント消えちゃうから↓それぞれ指定する*/
+
+}  
+
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color:orange;
+    color: white;
+    display: inline-block;
+    font-size: 2px;
+    position: absolute;/* 親要素の真ん中に設置する */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/* 親要素の真ん中に設置する */
+    z-index:2;
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color:navy;
+    color: white;
+    display: inline-block;
+    font-size: 2px;
+    position: absolute;
+    top: 0;
+    left: 10px; 
+    z-index:1;
+
+}
+
+
+.word{
+    font-size: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* 2個目のBOXたち */
+#container1{
+    width: 300px;
+    height: 150px;
+    background-color:tomato;
+    font-size: 0;
+    display: table;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    font-size: 2px;
+
+}
+
+.b3{
+    display: inline-block;
+}
+
+.b4{
+    color: white;
+    background-color:black;
+    display: inline-block;
+
+}
+
+/* 3個目のBOXたち */
+#container2{
+    width: 500px;
+    height: 300px;
+    background-color:tomato;
+}  
+
+.kinyuu{
+    width: 200px;
+    height: 100px;
+    background-color:chartreuse;
+}
